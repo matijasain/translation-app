@@ -1,43 +1,42 @@
-.languageSwitcher {
-    text-align: center;
-    align-items: centers;
-    vertical-align: middle;
+.language-switcher {
+  align-items: centers;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  &-iccon {
+    cursor: pointer;
     position: relative;
+    transform: rotate(-180deg);
+    transition: transform 0.6s;
 
-    .languageSwitcherIcon {
-        position: relative;
-        transition: transform 0.6s;
-        transform: rotate(-180deg);
-        cursor: pointer;
-
-        &-toggled {
-            transition: transform 0.6s;
-            transform: rotate(180deg);
-        }
-
+    &-toggled {
+      transform: rotate(180deg);
+      transition: transform 0.6s;
     }
+  }
 
-    &:before {
-        content: '';
-        position: absolute;
-        width: 255px;
-        height: 2px;
-        top: 18px;
-        left: -260px;
-        display: block;
-        clear: both;
-        background-color: rgba(0, 0, 0, 0.1);
-    }
+  &:before {
+    background-color: rgba(0, 0, 0, 0.1);
+    clear: both;
+    content: '';
+    display: block;
+    height: 2px;
+    left: -260px;
+    position: absolute;
+    top: 18px;
+    width: 255px;
+  }
 
-    &:after {
-        content: '';
-        position: absolute;
-        width: 100vw;
-        height: 2px;
-        top: 18px;
-        left: 41px;
-        display: block;
-        clear: both;
-        background-color: rgba(0, 0, 0, 0.1);
-    }
+  &:after {
+    background-color: rgba(0, 0, 0, 0.1);
+    clear: both;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 41px;
+    position: absolute;
+    top: 18px;
+    width: 100vw;
+  }
 }
