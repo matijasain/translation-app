@@ -1,0 +1,26 @@
+.language-selection {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+
+  img {
+    cursor: pointer;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  input {
+    border: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    padding-left: 20px;
+
+    &:focus {
+      color: rgba(0, 0, 0, 0.6);
+      outline: none;
+    }
+  }
+}

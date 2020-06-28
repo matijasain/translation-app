@@ -1,0 +1,43 @@
+.languageSwitcher {
+    text-align: center;
+    align-items: centers;
+    vertical-align: middle;
+    position: relative;
+
+    .languageSwitcherIcon {
+        position: relative;
+        transition: transform 0.6s;
+        transform: rotate(-180deg);
+        cursor: pointer;
+
+        &-toggled {
+            transition: transform 0.6s;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 255px;
+        height: 2px;
+        top: 18px;
+        left: -260px;
+        display: block;
+        clear: both;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 2px;
+        top: 18px;
+        left: 41px;
+        display: block;
+        clear: both;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
