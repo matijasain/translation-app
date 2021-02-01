@@ -1,3 +1,5 @@
+# Simple small translation styled component
+
 Instructions to run the application:
 
 1. Clone the project into desired destination
